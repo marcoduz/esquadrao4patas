@@ -10,6 +10,7 @@
   --bg-image: rgba(64, 131, 255, 0.35);
   --bg-light: hsl(240, 100%, 95%);
   --bg-light2: hsl(240, 100%, 98%);
+  --shadow-color: hsl(241, 21%, 38%);
 
   --font-light: hsl(202, 100%, 98%);
   --font-titulo-resgates: hsl(184, 84%, 51%);
@@ -37,6 +38,7 @@ body {
 a {
   text-decoration: none;
   font-size: 1.8rem;
+  color: var(--primary-color);
 }
 ul {
   list-style: none;
@@ -50,9 +52,61 @@ h2 {
   background-color: var(--primary-color);
   padding: 1.6rem;
   border-radius: 10rem;
+
+  transition: 0.8s;
 }
 p {
   font-size: 1.6rem;
+}
+/*---------------HOVERS--------------*/
+nav a:hover {
+  background-color: var(--primary-color);
+  color: var(--font-light);
+  padding: 2rem;
+  border-radius: 10rem;
+
+  transition: 0.8s;
+  box-shadow: 0 0 2rem var(--shadow-color);
+}
+.button:hover {
+  color: var(--primary-color);
+  background-color: var(--font-light);
+  padding: 2rem;
+  border-radius: 10rem;
+
+  transition: 0.8s;
+  box-shadow: 0 0 2rem var(--shadow-color);
+}
+#insta:hover {
+  background-color: hsl(331, 100%, 47%);
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem var(--shadow-color);
+
+  transition: 0.2s;
+}
+#whats:hover {
+  background-color: hsl(142, 70%, 49%);
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem var(--shadow-color);
+
+  transition: 0.2s;
+}
+#mail:hover {
+  background-color: hsl(0, 0%, 24%);
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem var(--shadow-color);
+
+  transition: 0.2s;
+}
+footer #nav a:hover {
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 36%);
+  font-weight: bold;
+
+  transition: 0.2s;
 }
 /*---------------INICIO--------------*/
 .inicio {
@@ -75,18 +129,30 @@ header {
 
   padding: 3.6rem 1rem;
 }
+nav {
+  margin-right: 3rem;
+}
 nav ul {
   display: flex;
   justify-content: space-between;
 }
 nav ul a {
   margin: 2rem;
+  background-color: var(--font-light);
+  padding: 1.6rem;
+  border-radius: 10rem;
+
+  transition: 0.8s;
 }
 #texto {
   width: 63.7rem;
   margin-inline: auto;
   margin-block: 8rem;
   color: var(--font-light);
+}
+#texto #redesSociais {
+  padding-inline: 30%;
+  margin-top: 3rem;
 }
 #texto p {
   padding-block: 3rem;
@@ -169,11 +235,10 @@ h3 {
   height: 65rem;
   padding-block: 3rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 #escrita {
-  float: left;
   padding-left: 3rem;
   width: 48%;
 }
@@ -199,5 +264,86 @@ h3 {
   width: 80%;
   height: auto;
   border-radius: 4rem;
+  display: inline-block;
+}
+/*----------------FOOTER--------------------*/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--bg-light2);
+
+  padding: 3rem;
+}
+footer img {
+  width: 40%;
+  height: auto;
+}
+footer p {
+  padding-block: 1rem;
+}
+bold {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+footer div {
+  width: 28%;
+}
+footer h4 {
+  font-size: 1.8rem;
+}
+footer a {
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+#Contato h4:first-child {
+  margin-bottom: 2rem;
+}
+#Contato h4:nth-child(3) {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+#redesSociais img {
+  width: 100%;
+  height: auto;
+}
+
+footer #nav,
+#redesSociais {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: auto;
+  padding: 1.2rem;
+}
+footer #nav a {
+  font-size: 1.6rem;
+  color: hsl(0, 0%, 24%);
+  font-weight: bold;
+
+  transition: 0.2s;
+}
+#insta {
+  background-color: hsl(331, 100%, 47%);
+  border-radius: 50%;
+  padding: 0.8rem;
+
+  transition: 0.2s;
+}
+#whats {
+  background-color: hsl(142, 70%, 49%);
+  border-radius: 50%;
+  padding: 0.8rem;
+
+  transition: 0.2s;
+}
+#mail {
+  background-color: hsl(0, 0%, 24%);
+  border-radius: 50%;
+  padding: 0.8rem;
+
+  transition: 0.2s;
 }
 /*----------------Carrossel--------------------*/
