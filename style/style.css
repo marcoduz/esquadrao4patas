@@ -7,10 +7,12 @@
 :root {
   /*variaveis do css*/
   --primary-color: hsl(245, 100%, 55%);
-  --bg-color: rgba(69, 61, 190, 0.2);
-  --paragraph: hsl(210, 9%, 31%);
+  --bg-image: rgba(64, 131, 255, 0.35);
+  --bg-light: hsl(240, 100%, 95%);
+  --bg-light2: hsl(240, 100%, 98%);
 
-  --bg-light: hsl(202, 100%, 98%);
+  --font-light: hsl(202, 100%, 98%);
+  --font-titulo-resgates: hsl(184, 84%, 51%);
 
   font-size: 62.5%; /* a fonte raiz do site foi alterada para 10px*/
 }
@@ -29,8 +31,8 @@ body {
   background-color: var(--bg-light);
 }
 #logo {
-  height: 20rem;
-  width: 20rem;
+  height: 16rem;
+  width: 16rem;
 }
 a {
   text-decoration: none;
@@ -41,21 +43,30 @@ ul {
 }
 h2 {
   font-size: 4.8rem;
+  color: var(--primary-color);
 }
 .button {
-  color: var(--bg-light);
+  color: var(--font-light);
   background-color: var(--primary-color);
   padding: 1.6rem;
   border-radius: 10rem;
 }
 p {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 /*---------------INICIO--------------*/
 .inicio {
-  padding: 0 4rem;
-  height: 90rem;
-  background-image: url(/imagens/bgInicio.png);
+  height: 80rem;
+  background-image: url(../imagens/bgInicio.png);
+  background-position: center;
+}
+.inicio h2 {
+  color: var(--font-light);
+}
+#teste {
+  background-color: var(--bg-image);
+  width: 100%;
+  height: 100%;
 }
 header {
   display: flex;
@@ -74,40 +85,119 @@ nav ul a {
 #texto {
   width: 63.7rem;
   margin-inline: auto;
-  margin-block: 10rem;
-  color: var(--bg-light);
+  margin-block: 8rem;
+  color: var(--font-light);
 }
 #texto p {
   padding-block: 3rem;
   margin-bottom: 1.6rem;
+  font-size: 2rem;
 }
-
-/*-----------PARCEIROS--------------------*/
-.parceiros {
-  height: 90rem;
-  padding-block: 3.5rem;
-}
-.parceiros h2 {
-  color: var(--primary-color);
-  margin-bottom: 3.5rem;
-}
+/*-------------CARD--------------------*/
 div.card {
   display: flex;
   flex-direction: column;
-  width: 45rem;
-  height: 55rem;
+  width: 43rem;
+  height: 50rem;
   background-color: #ffffff;
-  border-radius: 10rem;
-  padding: 4.8rem;
+  border-radius: 8rem;
+  padding: 4rem;
   margin-inline: auto;
   align-items: center;
   justify-content: center;
-  border: 0.1rem solid hsl(242, 22%, 28%);
-  box-shadow: 0.5rem 0.5rem 1rem hsl(242, 22%, 28%);
+  border: 0.1rem solid hsl(241, 21%, 38%);
+  box-shadow: 0.5rem 0.5rem 1rem hsl(241, 21%, 38%);
+  margin-top: 3rem;
 }
 .card img {
-  width: 35rem;
-  height: 35rem;
+  width: 25rem;
+  height: 25rem;
   margin-bottom: 2rem;
+}
+/*-----------PARCEIROS--------------------*/
+.parceiros {
+  padding-block: 3rem;
+  height: 65rem;
+}
+/*----------------RESGATES---------------------*/
+.row {
+  display: flex;
+  align-items: center;
+}
+.resgates {
+  background-color: var(--bg-light2);
+  height: 65rem;
+  padding: 3rem;
+}
+h3 {
+  color: var(--font-titulo-resgates);
+  font-size: 3rem;
+}
+.textoresgate {
+  text-align: justify;
+}
+.resgates .card p {
+  margin-block: 1rem;
+}
+.resgates .card img {
+  border-radius: 4rem;
+}
+/*----------------AJUDE---------------------*/
+.ajude {
+  height: 40rem;
+  background-image: url(../imagens/bgDoe.jpeg);
+  background-size: cover;
+  background-position: 0% 48%;
+}
+.ajude p {
+  color: var(--font-light);
+  font-size: 2rem;
+  padding-block: 3rem;
+  margin-bottom: 1.6rem;
+}
+.ajude h2 {
+  color: var(--font-light);
+  padding-top: 3rem;
+}
+#textoResgate {
+  width: 63.7rem;
+  margin-inline: auto;
+  color: var(--font-light);
+}
+/*----------------PRODUTOS--------------------*/
+.produtos {
+  height: 65rem;
+  padding-block: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#escrita {
+  float: left;
+  padding-left: 3rem;
+  width: 48%;
+}
+#escrita h2 {
+  font-size: 4rem;
+}
+#escrita ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block: 2rem;
+  margin-bottom: 1.6rem;
+}
+#escrita li {
+  font-size: 2rem;
+}
+#imagens {
+  float: right;
+  width: 48%;
+  padding-inline: 2rem;
+}
+#imagens img {
+  width: 80%;
+  height: auto;
+  border-radius: 4rem;
 }
 /*----------------Carrossel--------------------*/
