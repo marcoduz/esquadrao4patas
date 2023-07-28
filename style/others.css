@@ -1,0 +1,89 @@
+#about {
+  width: 65rem;
+  margin-inline: auto;
+  padding-block: 4rem;
+
+  text-align: justify;
+}
+#about h2 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+#about #redesSociais {
+  padding-inline: 30%;
+  margin-top: 4rem;
+}
+#about #redesSociais a {
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+#about p {
+  color: black;
+  padding-block: 1rem;
+  line-height: 1.9rem;
+}
+#about p:nth-child(5) {
+  margin-bottom: 2rem;
+}
+#about a.button {
+  margin-left: 35%;
+}
+
+#imagem {
+  width: 100%;
+  height: 30rem;
+  background-image: url(../imagens/about/saraLizAdote.jpg);
+  background-size: cover;
+  background-position: 50% 38%;
+}
+/*----------------ADOPT-------------*/
+
+#adopt {
+  width: 65rem;
+  padding-block: 4rem;
+  margin-inline: auto;
+}
+#adopt #redesSociais {
+  padding-inline: 30%;
+  margin-top: 4rem;
+}
+#adopt #redesSociais a {
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+#adopt h2 {
+  font-size: 4rem;
+}
+#adopt .card {
+  width: 35rem;
+  height: 45rem;
+  margin-bottom: 4rem;
+}
+#adopt .card img {
+  border-radius: 3rem;
+  width: 70%;
+  height: auto;
+}
+#adopt .card p {
+  text-align: justify;
+}
+/*---------------DONATE-------------*/
+#donate {
+  width: 65rem;
+  padding-block: 4rem;
+  margin-inline: auto;
+}
+#donate #redesSociais {
+  padding-inline: 30%;
+  margin-top: 4rem;
+}
+#donate #redesSociais a {
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+#donate h2 {
+  font-size: 4rem;
+}

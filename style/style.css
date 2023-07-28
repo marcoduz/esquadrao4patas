@@ -110,8 +110,8 @@ footer #nav a:hover {
 }
 /*---------------INICIO--------------*/
 .inicio {
-  height: 80rem;
-  background-image: url(../imagens/bgInicio.png);
+  height: auto;
+  background-image: url(../imagens/index/bgInicio.png);
   background-position: center;
 }
 .inicio h2 {
@@ -147,7 +147,7 @@ nav ul a {
 #texto {
   width: 63.7rem;
   margin-inline: auto;
-  margin-block: 8rem;
+  padding-block: 8rem;
   color: var(--font-light);
 }
 #texto #redesSociais {
