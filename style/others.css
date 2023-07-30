@@ -1,3 +1,7 @@
+:root {
+  --bg-donate: hsl(192, 100%, 96%);
+  --shadow-color: hsl(241, 21%, 38%);
+}
 #about {
   width: 65rem;
   margin-inline: auto;
@@ -71,9 +75,13 @@
 }
 /*---------------DONATE-------------*/
 #donate {
-  width: 65rem;
+  width: 55rem;
   padding-block: 4rem;
   margin-inline: auto;
+}
+#donate #box {
+  box-shadow: 0 0 1.5rem var(--shadow-color);
+  border-radius: 5rem;
 }
 #donate #redesSociais {
   padding-inline: 30%;
@@ -86,4 +94,35 @@
 }
 #donate h2 {
   font-size: 4rem;
+  margin-bottom: 2rem;
+}
+#donate #box {
+  width: 80%;
+  margin-inline: auto;
+  background-color: var(--bg-donate);
+}
+#donate img:first-child {
+  width: 100%;
+  height: auto;
+  margin-block: 0;
+  border-radius: 5rem;
+}
+#donate img {
+  width: 40%;
+  margin-block: 2rem;
+}
+#textDonate {
+  width: 100%;
+  padding-inline: 3rem;
+}
+#textDonate p {
+  line-height: 2rem;
+  text-align: justify;
+}
+#textDonate p:last-child {
+  margin-top: 2rem;
+}
+#textDonate h3 {
+  margin-bottom: 2rem;
+  color: black;
 }
