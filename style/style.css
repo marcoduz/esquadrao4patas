@@ -21,6 +21,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'DM Sans', sans-serif;
@@ -137,7 +138,7 @@ nav ul {
   justify-content: space-between;
 }
 nav ul a {
-  margin: 2rem;
+  margin: 1.5rem;
   background-color: var(--font-light);
   padding: 1.6rem;
   border-radius: 10rem;
@@ -216,7 +217,7 @@ h3 {
 /*----------------AJUDE---------------------*/
 .ajude {
   height: 40rem;
-  background-image: url(../imagens/bgDoe.jpeg);
+  background-image: url(../imagens/index/bgDoe.jpeg);
   background-size: cover;
   background-position: 0% 48%;
 }

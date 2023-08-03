@@ -1,0 +1,127 @@
+@media (max-width: 1024px) {
+  #logo {
+    height: 12.5vh;
+    width: auto;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  .inicio {
+    width: 100vw;
+  }
+  header {
+    width: 100%;
+    height: 13vh;
+    padding: 3vw;
+  }
+  nav {
+    margin-right: 3vw;
+  }
+
+  #texto {
+    width: 90%;
+    padding-block: 3vw;
+  }
+  #texto #redesSociais {
+    padding-inline: 10%;
+    margin-top: 2.5rem;
+  }
+  #texto p {
+    font-size: 1.8rem;
+  }
+  /*-------------CARD--------------------*/
+  div.card {
+    width: 85%;
+    height: 100%;
+  }
+  /*----------------RESGATES---------------------*/
+
+  .resgates {
+    background-color: var(--bg-light2);
+    height: 65rem;
+    padding-inline: 3vw;
+    padding-block: 3vh;
+  }
+  h3 {
+    color: var(--font-titulo-resgates);
+    font-size: 3rem;
+  }
+  .textoresgate {
+    text-align: justify;
+  }
+  .resgates .card p {
+    margin-block: 1rem;
+  }
+  .resgates .card img {
+    border-radius: 4rem;
+  }
+  /*----------------AJUDE---------------------*/
+  .ajude {
+    height: 40rem;
+    width: 100vw;
+  }
+  #textoResgate {
+    width: 90%;
+  }
+  /*----------------PRODUTOS--------------------*/
+  .produtos {
+    height: 65rem;
+    padding-block: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #escrita {
+    padding-inline: 3vw;
+    width: 100%;
+  }
+  #escrita h2 {
+    font-size: 3rem;
+  }
+  #escrita ul {
+    gap: 3vw;
+  }
+  #imagens {
+    float: right;
+    width: 100%;
+    margin-top: 1.6rem;
+    padding-inline: 3vw;
+  }
+  #imagens img {
+    margin-top: 3vh;
+  }
+  /*----------------FOOTER--------------------*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+
+    padding-inline: 3vw;
+    padding-block: 3vh;
+  }
+
+  footer div {
+    width: 100%;
+  }
+  #Contato h4:first-child {
+    margin-bottom: 3vh;
+  }
+  #Contato h4:nth-child(3) {
+    margin-block: 3vh;
+  }
+
+  /*=============SLIDER================*/
+  .slider {
+    width: 100vw;
+    height: 90%;
+  }
+  .slides {
+    width: 400%;
+    height: 90%;
+  }
+}
