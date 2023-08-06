@@ -3,7 +3,7 @@
   margin-inline: auto;
   padding-block: 4rem;
 
-  text-align: justify;
+  text-align: center;
 }
 #about h2 {
   font-size: 4rem;
@@ -22,17 +22,15 @@
   color: black;
   padding-block: 1rem;
   line-height: 1.9rem;
+  text-align: justify;
 }
 #about p:nth-child(5) {
   margin-bottom: 2rem;
 }
-#about a.button {
-  margin-left: 35%;
-}
 
 #imagem {
   width: 100%;
-  height: 30rem;
+  height: 26vw;
   background-image: url(../imagens/about/saraLizAdote.jpg);
   background-size: cover;
   background-position: 50% 38%;

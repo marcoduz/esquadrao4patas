@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+  html,
+  body {
+    width: 100vw;
+  }
   #logo {
     height: 12.5vh;
     width: auto;
@@ -94,6 +98,10 @@
   #imagens img {
     margin-top: 3vh;
   }
+  /*----------------RESGATES---------------------*/
+  section.resgates {
+    content-visibility: hidden;
+  }
   /*----------------FOOTER--------------------*/
   footer {
     display: flex;
@@ -124,4 +132,54 @@
     width: 400%;
     height: 90%;
   }
+}
+
+/*==========ABOUT===========*/
+#about {
+  width: 80vw;
+  margin-inline: auto;
+  padding-block: 4vh;
+
+  text-align: center;
+}
+#about h2 {
+  font-size: 3rem;
+  margin-bottom: 3vh;
+}
+#about #redesSociais {
+  padding-inline: 10%;
+  margin-top: 2.5rem;
+}
+#about #redesSociais a {
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+#about p {
+  color: black;
+  padding-block: 1.5vh;
+  line-height: 1.9rem;
+  text-align: justify;
+}
+#about p:nth-child(5) {
+  margin-bottom: 2rem;
+}
+/*================ADOPT======================*/
+#adopt {
+  width: 80vw;
+}
+#adopt h2 {
+  font-size: 3rem;
+}
+#adopt .card {
+  width: 85%;
+  height: 100%;
+}
+/*================DONATE======================*/
+#donate {
+  width: 100%;
+  padding-block: 4vh;
+}
+#donate h2 {
+  font-size: 3rem;
 }
