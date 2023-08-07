@@ -10,6 +10,7 @@
   --bg-image: rgba(64, 131, 255, 0.35);
   --bg-light: hsl(240, 100%, 95%);
   --bg-light2: hsl(240, 100%, 98%);
+  --bg-donate: hsl(192, 100%, 96%);
   --shadow-color: hsl(241, 21%, 38%);
 
   --font-light: hsl(202, 100%, 98%);
@@ -129,6 +130,7 @@ header {
   align-items: center;
 
   padding: 3.6rem 1rem;
+  overflow: hidden;
 }
 nav {
   margin-right: 3rem;
@@ -169,10 +171,10 @@ nav ul a {
 div.card {
   display: flex;
   flex-direction: column;
-  width: 43rem;
-  height: 50rem;
+  width: 35rem;
+  height: 45rem;
   background-color: #ffffff;
-  border-radius: 8rem;
+  border-radius: 7rem;
   padding: 4rem;
   margin-inline: auto;
   align-items: center;
@@ -182,8 +184,8 @@ div.card {
   margin-top: 3rem;
 }
 .card img {
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   margin-bottom: 2rem;
 }
 /*-----------PARCEIROS--------------------*/
@@ -192,18 +194,20 @@ div.card {
   height: 65rem;
 }
 /*----------------RESGATES---------------------*/
-.row {
-  display: flex;
-  align-items: center;
+.grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(43rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));
 }
 .resgates {
   background-color: var(--bg-light2);
-  height: 65rem;
+  height: auto;
   padding: 3rem;
 }
 h3 {
   color: var(--font-titulo-resgates);
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 .textoresgate {
   text-align: justify;
@@ -212,7 +216,8 @@ h3 {
   margin-block: 1rem;
 }
 .resgates .card img {
-  border-radius: 4rem;
+  border-radius: 3rem;
+  margin-bottom: 0rem;
 }
 /*----------------AJUDE---------------------*/
 .ajude {
@@ -267,7 +272,7 @@ h3 {
   padding-inline: 2rem;
 }
 #imagens img {
-  width: 80%;
+  width: min(80%, 59rem);
   height: auto;
   border-radius: 4rem;
   display: inline-block;
@@ -373,7 +378,7 @@ footer #nav a {
   position: relative;
   transition: 2s;
 }
-.manual-navigation {
+/* .manual-navigation {
   position: absolute;
   width: 80rem;
   margin-top: -4rem;
@@ -388,14 +393,14 @@ footer #nav a {
   border-radius: 1rem;
   cursor: pointer;
   transition: 1s;
-}
+} */
 
-.manual-btn:not(:last-child) {
+/* .manual-btn:not(:last-child) {
   margin-right: 4rem;
 }
 .manual-btn:hover {
   background-color: #ffffff;
-}
+} */
 #r1:checked ~ .first {
   margin-left: 0;
 }
@@ -420,7 +425,7 @@ footer #nav a {
 }
 .navigation-auto {
   position: absolute;
-  width: 80rem;
+  width: min(90%, 80rem);
   margin-top: 36rem;
   display: flex;
   justify-content: center;
@@ -439,4 +444,15 @@ footer #nav a {
 }
 #r4:checked ~ .navigation-auto .auto-btn1 {
   background-color: #ffffff;
+}
+/*-------copy---------------------------------*/
+.cop {
+  padding-block: 3vh;
+}
+.cop p {
+  color: hsl(0, 0%, 24%);
+  width: 95%;
+}
+.cop p:first-child {
+  margin-bottom: 1rem;
 }

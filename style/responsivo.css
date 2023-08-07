@@ -1,7 +1,7 @@
 @media (max-width: 1024px) {
   html,
   body {
-    width: 100vw;
+    width: 100%;
   }
   #logo {
     height: 12.5vh;
@@ -38,30 +38,42 @@
   }
   /*-------------CARD--------------------*/
   div.card {
-    width: 85%;
-    height: 100%;
+    width: min(85%, 35rem);
   }
   /*----------------RESGATES---------------------*/
-
+  .grid {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));
+  }
   .resgates {
     background-color: var(--bg-light2);
-    height: 65rem;
-    padding-inline: 3vw;
-    padding-block: 3vh;
+    height: auto;
+    padding: 3vh;
   }
   h3 {
     color: var(--font-titulo-resgates);
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .textoresgate {
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .resgates .card {
+    padding: 4vw;
   }
   .resgates .card p {
-    margin-block: 1rem;
+    margin-block: 2vw;
+    width: 95%;
+    font-size: 1.4rem;
   }
   .resgates .card img {
-    border-radius: 4rem;
+    border-radius: 3rem;
+    margin-bottom: 0rem;
   }
+
   /*----------------AJUDE---------------------*/
   .ajude {
     height: 40rem;
@@ -72,7 +84,8 @@
   }
   /*----------------PRODUTOS--------------------*/
   .produtos {
-    height: 65rem;
+    width: 100vw;
+    height: auto;
     padding-block: 3vh;
     display: flex;
     flex-direction: column;
@@ -98,10 +111,7 @@
   #imagens img {
     margin-top: 3vh;
   }
-  /*----------------RESGATES---------------------*/
-  section.resgates {
-    content-visibility: hidden;
-  }
+
   /*----------------FOOTER--------------------*/
   footer {
     display: flex;
@@ -132,54 +142,56 @@
     width: 400%;
     height: 90%;
   }
-}
+  /*==========ABOUT===========*/
+  #about {
+    width: 80vw;
+    margin-inline: auto;
+    padding-block: 4vh;
 
-/*==========ABOUT===========*/
-#about {
-  width: 80vw;
-  margin-inline: auto;
-  padding-block: 4vh;
-
-  text-align: center;
-}
-#about h2 {
-  font-size: 3rem;
-  margin-bottom: 3vh;
-}
-#about #redesSociais {
-  padding-inline: 10%;
-  margin-top: 2.5rem;
-}
-#about #redesSociais a {
-  margin-inline: auto;
-  display: flex;
-  align-items: center;
-}
-#about p {
-  color: black;
-  padding-block: 1.5vh;
-  line-height: 1.9rem;
-  text-align: justify;
-}
-#about p:nth-child(5) {
-  margin-bottom: 2rem;
-}
-/*================ADOPT======================*/
-#adopt {
-  width: 80vw;
-}
-#adopt h2 {
-  font-size: 3rem;
-}
-#adopt .card {
-  width: 85%;
-  height: 100%;
-}
-/*================DONATE======================*/
-#donate {
-  width: 100%;
-  padding-block: 4vh;
-}
-#donate h2 {
-  font-size: 3rem;
+    text-align: center;
+  }
+  #about h2 {
+    font-size: 3rem;
+    margin-bottom: 3vh;
+  }
+  #about #redesSociais {
+    padding-inline: 10%;
+    margin-top: 2.5rem;
+  }
+  #about #redesSociais a {
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+  }
+  #about p {
+    color: black;
+    padding-block: 1.5vh;
+    line-height: 1.9rem;
+    text-align: justify;
+  }
+  #about p:nth-child(5) {
+    margin-bottom: 2rem;
+  }
+  /*================ADOPT======================*/
+  #adopt {
+    width: 80vw;
+  }
+  #adopt h2 {
+    font-size: 3rem;
+  }
+  #adopt .card {
+    width: 85%;
+    height: 100%;
+  }
+  /*================DONATE======================*/
+  #donate {
+    width: 100%;
+    padding-block: 4vh;
+  }
+  #donate h2 {
+    font-size: 3rem;
+  }
+  #donate bold {
+    font-size: min(4vw, 1.6rem);
+  }
 }
