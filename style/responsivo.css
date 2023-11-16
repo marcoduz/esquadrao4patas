@@ -1,3 +1,6 @@
+.btn-mobile{
+  display: none;
+}
 @media (max-width: 1024px) {
   html,
   body {
@@ -23,6 +26,11 @@
   }
   nav {
     margin-right: 3vw;
+    display: none;
+  }
+  .btn-mobile{
+    display: flex;
+    font-size: 37px;
   }
 
   #texto {
