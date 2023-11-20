@@ -457,7 +457,7 @@ footer #nav a {
   margin-bottom: 1rem;
 }
 
-/* botão do whatsapp */
+/* ----------------- botão do whatsapp ------------------- */
 #btn-wpp{
   font-size: 14px;
   position: fixed;
@@ -487,4 +487,25 @@ footer #nav a {
       margin-top: 4px;
       margin-left: 1px;
       width: 81%;
+}
+@keyframes animacaoBotao {
+  0% {
+      transform: scale(1);
+  }
+
+  42% {
+      transform: scale(1);
+  }
+
+  50% {
+      transform: scale(1.2);
+  }
+
+  53% {
+      transform: scale(1.2);
+  }
+
+  61% {
+      transform: scale(1);
+  }
 }
