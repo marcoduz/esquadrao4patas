@@ -456,3 +456,35 @@ footer #nav a {
 .cop p:first-child {
   margin-bottom: 1rem;
 }
+
+/* botão do whatsapp */
+#btn-wpp{
+  font-size: 14px;
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #34af23;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFF;
+  /*padding: 5px 0 10px 0px;*/
+  text-transform: uppercase;
+  animation-name: animacaoBotao;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  font-family: "Raleway Semibold";
+  letter-spacing: 0.6px;
+  z-index: 12;
+  cursor: pointer;
+  /*box-shadow: inset -1px -1px black;*/
+  -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.77);
+}
+#btn-wpp img{
+      transform: translateY(1px);
+      /* padding-left: 5px; */
+      margin-top: 4px;
+      margin-left: 1px;
+      width: 81%;
+}
