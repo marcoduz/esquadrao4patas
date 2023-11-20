@@ -13,5 +13,7 @@ function nextImage() {
 
   document.getElementById('r' + count).checked = true
 }
-
-document.getElementById("btn-menu-mobile");
+function exibeMenu(){
+  var menu = document.querySelector('.menu');
+  menu.style.display = (menu.style.display === 'block'? 'none' : 'block');
+}
