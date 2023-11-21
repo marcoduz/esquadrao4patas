@@ -41,6 +41,7 @@ a {
   text-decoration: none;
   font-size: 1.8rem;
   color: var(--primary-color);
+  font-family: 'Plus Jakarta Sans';
 }
 ul {
   list-style: none;
@@ -48,6 +49,8 @@ ul {
 h2 {
   font-size: 4.8rem;
   color: var(--primary-color);
+  font-family: 'Titan One Regular';
+  font-weight: 100;
 }
 .button {
   color: var(--font-light);
@@ -59,6 +62,7 @@ h2 {
 }
 p {
   font-size: 1.6rem;
+  font-family: 'Plus Jakarta Sans';
 }
 /*---------------HOVERS--------------*/
 nav a:hover {
@@ -195,29 +199,58 @@ div.card {
 }
 /*----------------RESGATES---------------------*/
 .grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 26px 0;
+  /*display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));*/
+}
+.grid .container-resgate{
+  width: 31%;
+
+}
+.grid .container-resgate .card{
+  display: flex;
+    flex-direction: row;
+    width: 92%;
+    height: 27rem;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0.5rem 0.5rem 1rem hsl(241deg 21% 38% / 47%);
+    margin-top: 3rem;
+}
+.grid .container-resgate .card img{
+  height: 23rem;
 }
 .resgates {
   background-color: var(--bg-light2);
   height: auto;
-  padding: 3rem;
+  padding: 5rem 3rem 3rem 3rem;
 }
 h3 {
   color: var(--font-titulo-resgates);
   font-size: 2.4rem;
+  font-family: 'Plus Jakarta Sans';
 }
 .textoresgate {
   text-align: justify;
+  padding-right: 20px;
 }
 .resgates .card p {
   margin-block: 1rem;
 }
 .resgates .card img {
-  border-radius: 3rem;
+  border-radius: 1rem;
   margin-bottom: 0rem;
+  object-fit: cover;
 }
 /*----------------AJUDE---------------------*/
 .ajude {
@@ -302,6 +335,7 @@ footer div {
 }
 footer h4 {
   font-size: 1.8rem;
+  font-family: 'Plus Jakarta Sans';
 }
 footer a {
   margin-inline: auto;

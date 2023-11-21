@@ -3,6 +3,60 @@
 .btn-mobile{
   display: none;
 }
+
+@media(max-width:1920px){
+}
+@media(max-width: 1780px){
+  .grid .container-resgate .card {
+    width: 97%;
+  }
+
+}
+@media(max-width:1700px){
+  .grid .container-resgate {
+    width: 46%;
+    margin: 0 10px;
+  }
+}
+
+
+@media(max-width: 1290px){
+  .grid .container-resgate {
+    width: 46%;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 1180px){
+  .grid .container-resgate {
+    width: 47%;
+    margin: 2px 13px;
+}
+.grid .container-resgate .card {
+  width: 97%;
+}
+}
+
+@media (max-width: 1140px) {
+  .grid .container-resgate .card {
+  flex-direction: column;
+  height: 60rem;
+  width: 83%;
+  padding: 40px 0;
+  justify-content: space-between;
+
+  }
+  .grid .container-resgate .card .textoresgate{
+    padding-right: 0;
+    width: 80%;
+  }
+  .grid .container-resgate .card img {
+    width: 31rem;
+    height: 27rem;
+}
+  
+}
+
 @media (max-width: 1024px) {
 
   
@@ -115,10 +169,10 @@ nav ul li:first-child{
   }
   /*----------------RESGATES---------------------*/
   .grid {
-    display: grid;
+    /*display: grid;
     gap: 2vw;
     grid-template-columns: repeat(auto-fit, minmax(41vw, 2fr));
-    grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));*/
 }
   .resgates {
     background-color: var(--bg-light2);
@@ -268,13 +322,50 @@ nav ul li:first-child{
     font-size: min(4vw, 1.6rem);
   }
 }
+
+@media(max-width: 930px){
+  .grid .container-resgate {
+    width: 45%;
+  }
+  .grid .container-resgate .card {
+    width: 94%;
+  }
+  .grid .container-resgate .card img {
+    height: 24rem;
+    width: 24rem;
+    border-radius: 1rem;
+  }
+}
+
+
  @media (max-width: 685px) {
   .grid {
-    display: grid;
+    /*display: grid;
     gap: 2vw;
     grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));*/
     
   }
+  .grid .container-resgate {
+    width: 99%;
+  }
+  .grid .container-resgate .card {
+    width: 69%;
+    padding: 28px 0;
+  }
+  .grid .container-resgate .card .textoresgate {
+    width: 91%;
+  }
+  .grid .container-resgate .card img {
+    height: 28rem;
+    width: 83%;
+}
   
+ }
+
+ @media (max-width: 470px) {
+  .grid .container-resgate .card {
+    width: 84%;
+  }
+
  }
