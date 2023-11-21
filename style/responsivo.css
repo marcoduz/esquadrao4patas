@@ -117,9 +117,9 @@ nav ul li:first-child{
   .grid {
     display: grid;
     gap: 2vw;
-    grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(41vw, 2fr));
     grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));
-  }
+}
   .resgates {
     background-color: var(--bg-light2);
     height: auto;
@@ -268,3 +268,13 @@ nav ul li:first-child{
     font-size: min(4vw, 1.6rem);
   }
 }
+ @media (max-width: 685px) {
+  .grid {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));
+    
+  }
+  
+ }
