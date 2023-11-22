@@ -249,6 +249,14 @@ nav ul li:first-child{
     padding-inline: 3vw;
     padding-block: 3vh;
   }
+  footer p {
+    width: 50%;
+    margin: auto;
+  }
+  footer img {
+    width: 23%;
+   
+  }
 
   footer div {
     width: 100%;
@@ -321,6 +329,20 @@ nav ul li:first-child{
   #donate bold {
     font-size: min(4vw, 1.6rem);
   }
+
+  #r1:checked ~ .first {
+    margin-left: 0;
+  }
+  #r2:checked ~ .first {
+    margin-left: -20%;
+  }
+  #r3:checked ~ .first {
+    margin-left: -50%;
+  }
+  #r4:checked ~ .first {
+   margin-left: -75%;
+  }
+  
 }
 
 @media(max-width: 930px){
