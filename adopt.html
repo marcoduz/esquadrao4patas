@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/others.css" />
+    <link rel="stylesheet" href="./style/responsivo.css" />
+    <link rel="stylesheet" href="style/fonts.css">
+    <script src="script.js"></script>
+
     <title>Esqudrão 4 patas</title>
   </head>
   <body>
     <section class="inicio">
       <div id="teste">
         <header>
-          <a href="index.html">
-            <img
-              id="logo"
-              src="./imagens/index/logo.png"
-              alt="logo da ong: Uma patinha de cachorro preta com o escrita embaixo esquadrão 4 patas"
-            />
+          <a class="linkLogo" href="index.html">
+            <img id="logo" src="./imagens/index/logo.png"
+              alt="logo da ong: Uma patinha de cachorro preta com o escrita embaixo esquadrão 4 patas" />
           </a>
-          <nav>
+          <div class="btn-mobile">
+            <label id="btn-menu-mobile" onclick="exibeMenu()">&#9776;</label>
+          </div>
+          <nav class="menu">
             <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">Sobre nós</a></li>
-              <li><a href="./adopt.html">Adote</a></li>
-              <li>
-                <a class="button" href="./donate.html">faça uma doação!</a>
-              </li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Sobre nós</a></li>
+              <li><a href="adopt.html">Adote</a></li>
+              <li><a class="button" href="./donate.html">Faça uma doação!</a></li>
             </ul>
           </nav>
+  
         </header>
       </div>
     </section>
@@ -117,5 +120,9 @@
         </p>
       </div>
     </footer>
+    <div class="cop">
+      <p>&copy Esquadrão Quatro Patas</p>
+      <p>Desenvolvido por Beatriz Miranda, Marco Duz e Mariane teló</p>
+    </div>
   </body>
 </html>

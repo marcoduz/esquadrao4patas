@@ -3,7 +3,7 @@ document.getElementById('r1').checked = true
 
 setInterval(function () {
   nextImage()
-}, 5000)
+}, 2000)
 
 function nextImage() {
   count++
@@ -12,4 +12,8 @@ function nextImage() {
   }
 
   document.getElementById('r' + count).checked = true
+}
+function exibeMenu(){
+  var menu = document.querySelector('.menu');
+  menu.style.display = (menu.style.display === 'block'? 'none' : 'block');
 }
