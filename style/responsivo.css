@@ -282,7 +282,7 @@ nav ul li:first-child{
     width: 80vw;
     margin-inline: auto;
     padding-block: 4vh;
-
+    padding-top: 17vh;
     text-align: center;
   }
   #about h2 {
@@ -310,6 +310,7 @@ nav ul li:first-child{
   /*================ADOPT======================*/
   #adopt {
     width: 80vw;
+    padding-top: 17vh;
   }
   #adopt h2 {
     font-size: 3rem;
@@ -322,6 +323,7 @@ nav ul li:first-child{
   #donate {
     width: 100%;
     padding-block: 4vh;
+    padding-top: 17vh;
   }
   #donate h2 {
     font-size: 3rem;
