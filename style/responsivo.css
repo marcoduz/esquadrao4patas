@@ -58,8 +58,6 @@
 }
 
 @media (max-width: 1024px) {
-
-  
   /*menuu*/
   header {
     width: 100%;
@@ -67,12 +65,12 @@
     /*padding: 3vw;*/
     position: fixed;
     flex-wrap: wrap;
-    background-color: #fff;
+    background-color: #6280ff;
     justify-content: center;
     padding: 0;
     overflow: visible;
     border-bottom: 1px #ebebeb solid;
-    opacity: 90%;
+    opacity: 95%;
   }
   header .linkLogo{
     width: 50%;
@@ -87,7 +85,7 @@
   }
   nav ul a {
     margin: auto; 
-    background-color: #fff; 
+    background-color: #6280ff; 
     padding: 0; 
     border-radius: 0;
     transition: 0.8s;
@@ -106,7 +104,7 @@ nav ul li:first-child{
   }
   li .button {
     color: #000;
-    background-color:#fff;
+    background-color:#6280ff;
     padding: 0;
     border-radius: 0;
     transition: 0.8s;
@@ -130,7 +128,7 @@ nav ul li:first-child{
     text-align: center;
     padding: 15px 0;
     border-bottom: 1px #ebebeb solid;
-    background-color: #fff;
+    background-color: #6280ff;
   }
 
 
@@ -253,6 +251,9 @@ nav ul li:first-child{
     width: 50%;
     margin: auto;
   }
+  footer  #doacao p{
+    width: 100%;
+  }
   footer img {
     width: 23%;
    
@@ -344,6 +345,14 @@ nav ul li:first-child{
   #r4:checked ~ .first {
    margin-left: -75%;
   }
+
+  .cop {
+    display: flex;
+    /* text-align: center; */
+    padding-block: 3vh;
+    flex-direction: column;
+    align-items: center;
+}
   
 }
 
@@ -358,6 +367,11 @@ nav ul li:first-child{
     height: 24rem;
     width: 24rem;
     border-radius: 1rem;
+  }
+}
+@media(max-width:850px){
+  #adopt {
+    width: 96vw; 
   }
 }
 
@@ -383,8 +397,19 @@ nav ul li:first-child{
   .grid .container-resgate .card img {
     height: 28rem;
     width: 83%;
-}
-  
+  }
+  #adopt .animais-adocao {
+    flex-wrap: wrap;
+  }
+  #adopt .card {
+    width: 68%;
+  }
+  #texto {
+    padding: 40% 0 6% 0;
+  }
+  footer p {
+    width: 73%;
+  }
  }
 
  @media (max-width: 470px) {
@@ -392,4 +417,10 @@ nav ul li:first-child{
     width: 84%;
   }
 
+ }
+
+ @media (max-width: 375px) {
+  .ajude {
+    height: 44rem;
+  }
  }
