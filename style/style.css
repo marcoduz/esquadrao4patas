@@ -8,7 +8,7 @@
   /*variaveis do css*/
   --primary-color: #00C9FF;
   --bg-image: #02194dab;
-  --bg-light: #e9e9e9;
+  --bg-light: #ffffff;
   --bg-light2: hsl(240, 100%, 98%);
   --bg-donate: hsl(192, 100%, 96%);
   --shadow-color: hsl(241, 21%, 38%);
@@ -177,8 +177,8 @@ div.card {
   display: flex;
   flex-direction: column;
   width: 32rem;
-  height: 45rem;
-  background-color: #ffffff;
+  height: 53rem;
+  background-color: #f2f2f2;
   border-radius: 2rem;
   padding: 4rem;
   margin-inline: auto;
@@ -196,7 +196,7 @@ div.card {
 /*-----------PARCEIROS--------------------*/
 .parceiros {
   padding-block: 3rem;
-  height: 65rem;
+  height: 74rem;
 }
 /*----------------RESGATES---------------------*/
 .grid {
@@ -393,7 +393,55 @@ footer #nav a {
   transition: 0.2s;
 }
 /*----------------Slider--------------------*/
+.carousel-container {
+  max-width: 91%;
+  margin: 6px auto 50px;
+  position: relative;
+}
+.carousel-container .botoes{
+  margin-top: 10px;
+  cursor: pointer; 
+  display: flex;
+  justify-content: center;
+}
 
+.carousel-container .botoes a{
+  color: #6280ff;
+  margin: 0 10px;
+}
+
+
+.carousel-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.card {
+  flex: 0 0 calc(100% / 4);
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
 .slider {
 /*  margin: 0 auto;
   width: 80rem;*/

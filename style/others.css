@@ -40,7 +40,7 @@
 /*----------------ADOPT-------------*/
 
 #adopt {
-  width: 96rem;
+  width: 125rem;
   padding-block: 4rem;
   margin-inline: auto;
 }
@@ -94,6 +94,7 @@
   height: 60rem;
   margin: 4rem;
   box-shadow: 1px 1px 11px 5px #bfbfbf;
+  background-color: #fff;
 
 }
 
