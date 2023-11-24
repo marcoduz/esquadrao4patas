@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const index = (currentIndex + i) % cards.length;
           cards[index].style.display = 'block';
       }
+      
   }
 
   function nextCard() {

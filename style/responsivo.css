@@ -71,6 +71,7 @@
     overflow: visible;
     border-bottom: 1px #ebebeb solid;
     opacity: 95%;
+    z-index: 9;
   }
   header .linkLogo{
     width: 50%;
@@ -356,6 +357,15 @@ nav ul li:first-child{
   
 }
 
+@media(max-width: 960px){
+  .carousel-container {
+    max-width: 61%;
+  }
+  .carousel-container .carousel-wrapper .card{
+    margin-right: 10px;
+  }
+}
+
 @media(max-width: 930px){
   .grid .container-resgate {
     width: 45%;
@@ -373,6 +383,11 @@ nav ul li:first-child{
   #adopt {
     width: 96vw; 
   }
+}
+@media(max-width: 716px){
+  .carousel-container {
+    max-width: 81%;
+}
 }
 
 
@@ -422,5 +437,10 @@ nav ul li:first-child{
  @media (max-width: 375px) {
   .ajude {
     height: 44rem;
+  }
+  #donate #box #textDonate .pix{
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
  }
