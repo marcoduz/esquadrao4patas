@@ -104,7 +104,7 @@ nav ul li:first-child{
     align-items: center;
   }
   li .button {
-    color: #000;
+    color: #fff;
     background-color:#6280ff;
     padding: 0;
     border-radius: 0;
@@ -420,7 +420,6 @@ nav ul li:first-child{
     width: 84%;
     flex: none;
   }
-
   #texto {
     padding: 40% 0 6% 0;
   }
@@ -433,12 +432,25 @@ nav ul li:first-child{
   .grid .container-resgate .card {
     width: 84%;
   }
-
+  .carousel-container .botoes {
+    display: none;
  }
+}
 
  @media (max-width: 375px) {
   .ajude {
     height: 44rem;
+  }
+.card-img{
+    display: flex;
+    justify-content: center;
+  }
+.card-img img{
+    width: 16rem;
+    height: 16rem;
+  }
+  .card-txt p{
+      font-size: 1.5rem;
   }
   #donate #box #textDonate .pix{
     display: flex;
